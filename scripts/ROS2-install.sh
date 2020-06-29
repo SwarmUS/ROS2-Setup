@@ -19,3 +19,6 @@ sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.or
 # Installing ROS2 dashing
 sudo apt update
 sudo apt install ros-foxy-desktop
+
+# Set up environment
+source /opt/ros/foxy/setup.bash
