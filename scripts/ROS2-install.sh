@@ -1,5 +1,5 @@
 # Check if ROS2 already installed
-if (dpkg -s ros-foxy-desktop); then
+if (dpkg -s ros-dashing-desktop); then
     echo "ROS2 already installed, nothing to be done"
     exit 0
 fi
@@ -18,7 +18,7 @@ sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.or
 
 # Installing ROS2 dashing
 sudo apt update
-sudo apt install ros-foxy-desktop
+sudo apt install ros-dashing-desktop
 
 # Set up environment
-source /opt/ros/foxy/setup.bash
+source /opt/ros/dashing/setup.bash
